@@ -1,0 +1,28 @@
+{
+  "restaurants": [
+    {
+      "name": "Domino",
+      "address": "Gulshan",
+      "email": "Domino-hr@gmail.com",
+      "id": 1
+    },
+    {
+      "name": "Pizza Lab",
+      "address": "Johar",
+      "email": "pizzalab@gmail.com",
+      "id": 2
+    },
+    {
+      "name": "as",
+      "address": "as",
+      "email": "as",
+      "id": 3
+    },
+    {
+      "name": "Pizzeria",
+      "address": "Maskan KU",
+      "email": "pizzeriaKU@gmai.com",
+      "id": 4
+    }
+  ]
+}
