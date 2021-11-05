@@ -17,5 +17,8 @@ constructor( private http:HttpClient) { }
   saveResto(data:any){
      return this.http.post(this.url,data)
   }
-  
+
+  delResto(id:any){
+    return this.http.delete(`${this.url}/${id}`)
+  }
 }

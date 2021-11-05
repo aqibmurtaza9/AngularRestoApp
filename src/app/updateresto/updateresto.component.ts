@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
+import { RestoService } from '../resto.service';
 
 @Component({
   selector: 'app-updateresto',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class UpdaterestoComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private resto:RestoService) { }
+
+  addResto=new FormGroup({
+  name:new FormControl(''),
+  address:new FormControl(''),
+  email:new FormControl('')
+})
+
 
   ngOnInit(): void {
+
   }
 
 }

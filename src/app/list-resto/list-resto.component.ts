@@ -25,7 +25,13 @@ export class ListRestoComponent implements OnInit {
 
   }
   
-
+  delResto(item:any){
+    this.resto.delResto(item).subscribe((result)=> {
+      console.warn(result);   
+    })
+    window.location.reload();
+  }
 
 
 }
+
