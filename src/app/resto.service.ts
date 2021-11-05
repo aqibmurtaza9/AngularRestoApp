@@ -21,4 +21,10 @@ constructor( private http:HttpClient) { }
   delResto(id:any){
     return this.http.delete(`${this.url}/${id}`)
   }
+  
+  getCurrentResto(id:any){
+    return this.http.get(`${this.url}/${id}`)
+  }
+
+
 }

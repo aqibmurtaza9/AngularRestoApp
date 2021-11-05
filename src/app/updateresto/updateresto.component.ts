@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { RestoService } from '../resto.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-updateresto',
@@ -9,18 +10,26 @@ import { RestoService } from '../resto.service';
 })
 export class UpdaterestoComponent implements OnInit {
 
-
-  constructor(private resto:RestoService) { }
-
-  addResto=new FormGroup({
-  name:new FormControl(''),
-  address:new FormControl(''),
-  email:new FormControl('')
-})
+  editResto=new FormGroup({
+    name:new FormControl(''),
+    address:new FormControl(''),
+    email:new FormControl('')
+  })
+  constructor(private router:ActivatedRoute, private resto:RestoService) { }
 
 
   ngOnInit(): void {
+         console.log(this.router.snapshot.params.id)
+         this.resto.getCurrentResto(this.router.snapshot.params.id).subscribe((result) => {
+             console.warn(result)
+          this.editResto=new FormGroup({
+            name: new  FormControl(''),
+            address: new FormControl(''),
+            email: new FormControl('')
+          })
 
-  }
+         })
+    
+   }
 
 }
