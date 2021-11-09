@@ -13,16 +13,10 @@
       "id": 2
     },
     {
-      "name": "as",
-      "address": "as",
-      "email": "as",
+      "name": "Mandi House",
+      "address": "Bahadurabad",
+      "email": "mh@gmail.com",
       "id": 3
-    },
-    {
-      "name": "Pizzeria",
-      "address": "Maskan KU",
-      "email": "pizzeriaKU@gmai.com",
-      "id": 4
     }
   ]
 }
